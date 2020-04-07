@@ -1,0 +1,2094 @@
+@blockmargin:14px;
+@blockmargins:11px;
+
+@weth1:0.8;
+@weth2:0.65;
+@sp1:0.65;
+@sp2:0.47;
+@media (min-width: 921px) and (max-width: 1367px){
+  .item-wrap{
+    .item{
+      padding:18px*@sp1 !important;
+      
+      &.all-line{
+        position: relative;
+        p{
+          display: flex;
+        }
+        i{
+          margin-right: 15px*@sp1 !important;
+        }
+        span{
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          em{
+            text-align: left;
+            margin: 0; 
+            line-height: 25px*@sp1 !important;
+          }
+        }
+        input[type="button"]{
+          .transition;
+          width: 50px*@sp1 !important;
+          height: 50px*@sp1 !important;
+          position: absolute;
+          bottom: 20px*@sp1 !important;
+          right: 40px*@sp1 !important;
+          border-radius: 50%;
+          border: none;
+          background-color:transparent;
+          background-image: url(../../../images/zj_management_system_qjtbtn.png);
+          background-size: cover;
+        }
+        &:hover{
+          input[type="button"]{
+            .transition;
+            right: 30px*@sp1 !important;
+          }
+        }
+      }
+      &.weather{
+        position: relative;
+        background-color: rgb(0,157,248);
+        i{
+          position: absolute;
+          left:98px*@weth1 !important;
+          top:45px*@weth1 !important;
+          background-position: 9px*@weth1 -738px*@weth1 !important;
+          width: 180px*@weth1 !important;
+          min-height: 150px*@weth1 !important;
+          background-size: 145px*@weth1 !important;
+        };
+        b{
+          position: absolute;
+          top:23px*@weth1 !important;
+          left:20px*@weth1 !important;
+          font-size: 28px*@weth1 !important;
+          font-weight: 400;
+        }
+        span.s1{
+          position: absolute;
+          top:66px*@weth1 !important;
+          left:23px*@weth1 !important;
+          font-size: 18px*@weth1 !important;
+        }
+        span.s2{
+          position: absolute;
+          top:99px*@weth1 !important;
+          left:23px*@weth1 !important;
+          font-size: 18px*@weth1 !important;
+        }
+        span.s3{
+          position: absolute;
+          top:129px*@weth1 !important;
+          left:23px*@weth1 !important;
+          font-size: 18px*@weth1 !important;
+        }
+      }
+      // 信息查询 -1274
+      &.xxcx{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -1103px*@sp1 !important;
+        }
+      }
+      //案件办理 -20
+      &.ajbl{
+        background-color: rgb(27,193,191);
+        i{
+          background-position:  9px*@sp1 6px*@sp1 !important;
+        }
+      }
+      //雷达监控 -3597px
+      &.ldjk{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  -3px*@sp1 -3209px*@sp1 !important;
+        }
+      }
+      //合作社台帐 -3163px
+      &.hzstz{
+        background-color: rgb(167,38,253);
+        i{
+          background-position: 0px -2842px*@sp1 !important;
+        }
+      }
+      //系统设置 -888
+      &.xtgl{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  -1px -793px*@sp1 !important;
+        }
+      }
+      //日常检查 -4448px
+      &.rcjc{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  2px*@sp1 -3979px*@sp1 !important;
+        }
+      }
+      //电子证照 -2764px
+      &.dzzz{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  -1px -2474px*@sp1 !important;
+        }
+      }
+      //渔船安全记分 -1604
+      &.ycaqjf{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  -3px*@sp1 -1429px*@sp1 !important;
+        }
+      }
+      //渔船点验 -1973
+      &.ycdy{
+        background-color: rgb(82,75,255);
+        i{
+          background-position: 0px -1756px*@sp1 !important;
+        }
+      }
+      //视频监控 -4817px
+      &.spjk{
+        background-color: rgb(64,191,73);
+        i{
+          background-position: 0px -4316px*@sp1 !important;
+        }
+      }
+      ////////////////日常检查
+      //开捕检查
+      &.kbjc{
+        background-color: rgb(64,191,73);
+        i{
+            background-position:  6px*@sp1 -427px*@sp1 !important;
+        }
+      }
+      //日常检查
+      &.dailyCheck{
+        background-color: rgb(167,38,253);
+        i{
+          background-position:  6px*@sp1 -427px*@sp1 !important;
+        }
+      }
+      //出港检查
+      &.cgjc{
+        background-color: rgb(236,68,68);
+        i{
+            background-position:  1px -666px*@sp1 !important;
+        }
+      }
+      //安全检查
+      &.daycheck-aqjc{
+        background-color: rgb(24,115,231);
+        i{
+            background-position:  8px*@sp1 1px !important;
+        }
+      }
+      //四库对比
+      &.skdb{
+        background-color: rgb(82,75,255);
+        i{
+            background-position:  2px*@sp1 -1910px*@sp1 !important;
+        }
+      }
+      //三库检查
+      &.skjc{
+        background-color: rgb(0,157,248);
+        i{
+            background-position:  -1px -1235px*@sp1 !important;
+        }
+      }
+      //自愿上缴承诺书
+      &.zysjcns{
+        background-color: rgb(24,115,231);
+        i{
+            background-position:  6px*@sp1 -1580px*@sp1 !important;
+        }
+      }
+      //违禁渔获检查单
+      &.wjyhjyd{
+        background-color: rgb(11,189,212);
+        i{
+            background-position:  4px*@sp1 -947px*@sp1 !important;
+        }
+      }
+      //多休减捕
+      &.dxjb{
+        background-color: rgb(255,122,64);
+        i{
+            background-position:  7px*@sp1 -206px*@sp1 !important;
+        }
+      }
+      ////////////////渔船点验
+      //统计列表
+      &.tjlb{
+        background-color: rgb(236,68,68);
+        i{
+            background-position:  2px*@sp1 -3px*@sp1 !important;
+        }
+      }
+      //统计历史
+      &.tjls{
+        background-color: rgb(82,75,255);
+        i{
+            background-position:  0px -492px*@sp1 !important;
+        }
+      }
+      //白名单
+      &.bmd{
+        background-color: rgb(64,191,73);
+        i{
+            background-position:  3px*@sp1 -254px*@sp1 !important;
+        }
+      }
+      ////////////////信息查询
+      //渔船档案
+      &.ycda{
+        background-color: rgb(36,211,209);
+        i{
+            background-position:  5px*@sp1 -5292px*@sp1 !important;
+        }
+      }
+      //船员档案
+      &.cyda{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px 6px*@sp1 !important;
+        }
+      }
+      //船员档案(救助系统)
+      &.cyda_jzxt{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  5px -5292px*@sp1 !important;
+        }
+      }
+      //通讯录
+      &.txl{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -1px -7021px*@sp1 !important;
+        }
+      }
+      //养殖档案
+      &.yzda{
+        background-color: rgb(0,157,248);
+        i{
+          background-position: 2px*@sp1 -6122px*@sp1 !important;
+        }
+      }
+      //雇主责任互保
+      &.gzzrhb{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  0px -2589px*@sp1 !important;
+        }
+      }
+      //渔船互保
+      &.yczrhb{
+        background-color: rgb(255,49,150);
+        i{
+          background-position: 2px*@sp1 -3479px*@sp1 !important;
+        }
+      }
+      //基层组织管理
+      &.jczzgl{
+        background-color: rgb(0,148,234);
+        i{
+          background-position:  5px*@sp1 -1716px*@sp1 !important;
+        }
+      }
+      //离线渔船管理
+      &.lxycgl{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  -13px*@sp1 -13px*@sp1 !important;
+        }
+      }
+      //通知公告
+      &.tzgg{
+        background-color: rgb(64,191,73);
+        i{
+          background-position:  2px*@sp1 -6543px*@sp1 !important;
+        }
+      }
+      //港口管理
+      &.gkgl{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -3045px*@sp1 !important;
+        }
+      }
+      //考试管理
+      &.ksgl{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  0px -835px*@sp1 !important;
+        }
+      }
+      //渔船动态编组管理
+      &.ycdtbzgl{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -4388px*@sp1 !important;
+        }
+      }
+      ////////////////案件办理
+      //立案查处（一般案件）
+      &.lacc-ybaj{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  3px*@sp1 -4376px*@sp1 !important;
+        }
+      }
+      //卷宗档案库
+      &.jzdak{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -3983px*@sp1 !important;
+        }
+      }
+      //在办案件
+      &.zbaj{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  2px*@sp1 -693px*@sp1 !important;
+        }
+      }
+      //法律法规
+      &.flfg{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  0px -3610px*@sp1 !important;
+        }
+      }
+      //证据库
+      &.zjk{
+        background-color: rgb(0,157,248);
+        i{
+          background-position:  0px -1413px*@sp1 !important;
+        }
+      }
+      //案件待审批
+      &.ajdsp{
+        background-color: rgb(23,211,209);
+        i{
+          background-position:  2px*@sp1 8px*@sp1 !important;
+        }
+      }
+      //统计分析
+      &.tjfx{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  0px -325px*@sp1 !important;
+        }
+      }
+      //三无渔船
+      &.swyc{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -1413px*@sp1 !important;
+        }    
+      }      
+      //当场处罚（简易案件）
+      &.dccf-jyaj{
+        background-color: rgb(64,191,73);
+        i{
+          background-position:  8px*@sp1 -2902px*@sp1 !important;
+        }
+      }
+      //自由裁量
+      &.zycj{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  2px*@sp1 -1797px*@sp1 !important;
+        }
+      }
+      ////////////////渔船安全记分
+      //记分管理
+      &.jfgl {
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  5px*@sp1 -2126px*@sp1 !important;
+        }
+      }
+      //消分申请
+      &.ycjf-xfgl{
+        background-color: rgb(64,191,73);
+        i{
+          background-position: 0px -3317px*@sp1 !important;
+        }
+      }
+      //奖分申请
+      &.ycjf-jfsq{
+        background-color: rgb(236,68,68);
+        i{
+          background-position: 0px -636px*@sp1 !important;
+        }
+      }
+      //记分条例
+      &.ycjf-jftl{
+        background-color: rgb(0,157,248);
+        i{
+          background-position: 4px*@sp1 -1330px*@sp1 !important;
+        }
+      }
+      //个人查询
+      &.grcx{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -2524px*@sp1 !important;
+        }
+      }
+      //安全检查
+      &.aqjc{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  0px -2922px*@sp1 !important;
+        }
+      }
+      //统计
+      &.ycjf-tj{
+        background-color: rgb(0,148,234);
+        i{
+          background-position: 0px -3999px*@sp1 !important;
+        }
+      }
+      //满分榜单
+      &.ycjf-mfbd{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -299px*@sp1 !important;
+        }
+      }
+      //安全黑名单
+      &.ycjf-aqhmd{
+        background-color: rgb(11,189,212);
+        i{
+          background-position: 0px 12px*@sp1 !important;
+        }
+      }
+      ////////////////合作社台账
+      //规章制度
+      &.gzzd{
+        background-color: rgb(64, 192, 73);
+        i{
+          background-position:  -1px -1621px*@sp1 !important;
+        }
+      }
+      //值班日志
+      &.zbrz{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  0px -2658px*@sp1 !important;
+        }
+      }
+      //海事渔事
+      &.hshy{
+        background-color: rgb(64, 192, 73);
+        i{
+          background-position:  0px -969px*@sp1 !important;
+        }
+        span{
+          width:200px*@sp1 !important;
+          position: relative;
+          left:15px*@sp1 !important;
+        }
+      }
+      //明火作业
+      &.mhzy{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -1px -313px*@sp1 !important;
+        }
+      }
+      //安全检查
+      &.hzs-aqjc{
+        background-color: rgb(255, 181, 24);
+        i{
+          background-position:  -1px -1960px*@sp1 !important;
+        }
+      }
+      //安全活动
+      &.aqhd{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -3px*@sp1 0px*@sp1 !important;
+        }
+      }
+      //移泊报告
+      &.ybbg{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  0px -3030px*@sp1 !important;
+        }
+      }
+      //文件管理
+      &.wjgl{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  -1px -4113px*@sp1 !important;
+        }
+      }
+      //一船一档
+      &.ycyd{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  1px -3769px*@sp1 !important;
+        }
+        span{
+          width:200px*@sp1 !important;
+          position: relative;
+          left:15px*@sp1 !important;
+        }
+      }
+      //渔船编组
+      &.ycbz{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  -1px -4796px*@sp1 !important;
+        }
+      }
+      //定人联船
+      &.drlc{
+        background-color: rgb(167,38,253);
+        i{
+          background-position:  4px*@sp1 -4323px*@sp1 !important;
+        }
+      }
+    //监护人管理
+    &.jhrgl{
+      background-color: rgb(0,148,234);
+      i{
+        background-position:  0px -4574px*@sp1 !important;
+      }
+    }
+    //证书到期
+    &.zsdq{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -3934px*@sp1 !important;
+      }
+    }
+      ////////////////
+      //开机记录
+      &.kjjl{
+        background-color: #09a3e3;
+        i{
+          background-position:  -13px*@sp1 -119px*@sp1 !important;
+        }
+      }
+      //申请消分
+      &.sqxf{
+        //background-color: #f1e016;
+        background-color: #1663f1;
+        i{
+          background-position:  -13px*@sp1 -866px*@sp1 !important;
+        }
+      }
+      //系统分析
+      &.xtfx{
+        background-color: #2a80ef;
+        i{
+          background-position:  -13px*@sp1 -1062px*@sp1 !important;
+        }
+      }    
+      //消分记录
+      &.xfjl{
+        background-color: #339c08;
+        i{
+          background-position:  -13px*@sp1 -1168px*@sp1 !important;
+        }
+      }
+      //记分条例
+      &.jftl{
+        background-color: #d32c2c;
+        margin-left: @blockmargins;
+        i{
+          background-position:  -13px*@sp1 -1281px*@sp1 !important;
+        }
+      }
+      //台州安全检查
+      &.tz-aqjc{
+        background-color: #deb51a;
+        i{
+          background-image: url(../../../images/icon4.png);                
+          background-position: -13px*@sp1 -119px*@sp1 !important;
+        }
+      }
+      &.volkswagen{
+        i{        
+          margin: 16px*@sp1 auto 0px auto !important;
+        }
+      }
+    }
+    em{
+      font-size: 24px*@sp1 !important;////////////////////
+    }
+    i{
+      display: block;
+      width: 95px*@sp1 !important;
+      min-height: 100px*@sp1 !important;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: 95px*@sp1 !important; //////////////////////
+    }
+  }
+}
+@media (max-width: 920px){
+  .item-wrap{
+    .item{
+      padding:18px*@sp2 !important;
+
+      &.all-line{
+        position: relative;
+        p{
+          display: flex;
+        }
+        i{
+          margin-right: 15px*@sp2 !important;
+        }
+        span{
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          em{
+            text-align: left;
+            margin: 0; 
+            line-height: 25px*@sp2 !important;
+          }
+        }
+        input[type="button"]{
+          .transition;
+          width: 50px*@sp2 !important;
+          height: 50px*@sp2 !important;
+          position: absolute;
+          bottom: 20px*@sp2 !important;
+          right: 40px*@sp2 !important;
+          border-radius: 50%;
+          border: none;
+          background-color:transparent;
+          background-image: url(../../../images/zj_management_system_qjtbtn.png);
+          background-size: cover;
+        }
+        &:hover{
+          input[type="button"]{
+            .transition;
+            right: 30px*@sp2 !important;
+          }
+        }
+      }
+      &.weather{
+        position: relative;
+        background-color: rgb(0,157,248);
+        i{
+          position: absolute;
+          left:98px*@weth2 !important;
+          top:45px*@weth2 !important;
+          background-position: 9px*@weth2 -738px*@weth2 !important;
+          width: 180px*@weth2 !important;
+          min-height: 150px*@weth2 !important;
+          background-size: 145px*@weth2 !important;
+        };
+        b{
+          position: absolute;
+          top:23px*@weth2 !important;
+          left:20px*@weth2 !important;
+          font-size: 28px*@weth2 !important;
+          font-weight: 400;
+        }
+        span.s1{
+          position: absolute;
+          top:66px*@weth2 !important;
+          left:23px*@weth2 !important;
+          font-size: 18px*@weth2 !important;
+        }
+        span.s2{
+          position: absolute;
+          top:99px*@weth2 !important;
+          left:23px*@weth2 !important;
+          font-size: 18px*@weth2 !important;
+        }
+        span.s3{
+          position: absolute;
+          top:129px*@weth2 !important;
+          left:23px*@weth2 !important;
+          font-size: 18px*@weth2 !important;
+        }
+      }
+      // 信息查询 -1274
+      &.xxcx{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -1103px*@sp2 !important;
+        }
+      }
+      //案件办理 -20
+      &.ajbl{
+        background-color: rgb(27,193,191);
+        i{
+          background-position:  9px*@sp2 6px*@sp2 !important;
+        }
+      }
+      //雷达监控 -3597px
+      &.ldjk{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  -3px*@sp2 -3209px*@sp2 !important;
+        }
+      }
+      //合作社台帐 -3163px
+      &.hzstz{
+        background-color: rgb(167,38,253);
+        i{
+          background-position: 0px -2842px*@sp2 !important;
+        }
+      }
+      //系统设置 -888
+      &.xtgl{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  -1px -793px*@sp2 !important;
+        }
+      }
+      //日常检查 -4448px
+      &.rcjc{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  2px*@sp2 -3979px*@sp2 !important;
+        }
+      }
+      //电子证照 -2764px
+      &.dzzz{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  -1px -2474px*@sp2 !important;
+        }
+      }
+      //渔船安全记分 -1604
+      &.ycaqjf{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  -3px*@sp2 -1429px*@sp2 !important;
+        }
+      }
+      //渔船点验 -1973
+      &.ycdy{
+        background-color: rgb(82,75,255);
+        i{
+          background-position: 0px -1756px*@sp2 !important;
+        }
+      }
+      //视频监控 -4817px
+      &.spjk{
+        background-color: rgb(64,191,73);
+        i{
+          background-position: 0px -4316px*@sp2 !important;
+        }
+      }
+      ////////////////日常检查
+      //开捕检查
+      &.kbjc{
+        background-color: rgb(64,191,73);
+        i{
+            background-position:  6px*@sp2 -427px*@sp2 !important;
+        }
+      }
+      //日常检查
+      &.dailyCheck{
+        background-color: rgb(167,38,253);
+        i{
+          background-position:  6px*@sp1 -427px*@sp2 !important;
+        }
+      }
+      //出港检查
+      &.cgjc{
+        background-color: rgb(236,68,68);
+        i{
+            background-position:  1px -666px*@sp2 !important;
+        }
+      }
+      //安全检查
+      &.daycheck-aqjc{
+        background-color: rgb(24,115,231);
+        i{
+            background-position:  8px*@sp2 1px !important;
+        }
+      }
+      //四库对比
+      &.skdb{
+        background-color: rgb(82,75,255);
+        i{
+            background-position:  2px*@sp2 -1910px*@sp2 !important;
+        }
+      }
+      //三库检查
+      &.skjc{
+        background-color: rgb(0,157,248);
+        i{
+            background-position:  -1px -1235px*@sp2 !important;
+        }
+      }
+      //自愿上缴承诺书
+      &.zysjcns{
+        background-color: rgb(24,115,231);
+        i{
+            background-position:  6px*@sp2 -1580px*@sp2 !important;
+        }
+      }
+      //违禁渔获检查单
+      &.wjyhjyd{
+        background-color: rgb(11,189,212);
+        i{
+            background-position:  4px*@sp2 -947px*@sp2 !important;
+        }
+      }
+      //多休减捕
+      &.dxjb{
+        background-color: rgb(255,122,64);
+        i{
+            background-position:  7px*@sp2 -206px*@sp2 !important;
+        }
+      }
+      ////////////////渔船点验
+      //统计列表
+      &.tjlb{
+        background-color: rgb(236,68,68);
+        i{
+            background-position:  2px*@sp2 -3px*@sp2 !important;
+        }
+      }
+      //统计历史
+      &.tjls{
+        background-color: rgb(82,75,255);
+        i{
+            background-position:  0px -492px*@sp2 !important;
+        }
+      }
+      //白名单
+      &.bmd{
+        background-color: rgb(64,191,73);
+        i{
+            background-position:  3px*@sp2 -254px*@sp2 !important;
+        }
+      }
+      ////////////////信息查询
+      //渔船档案
+      &.ycda{
+        background-color: rgb(36,211,209);
+        i{
+            background-position:  5px*@sp2 -5292px*@sp2 !important;
+        }
+      }
+      //船员档案
+      &.cyda{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px 6px*@sp2 !important;
+        }
+      }
+      //船员档案(救助系统)
+      &.cyda_jzxt{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  5px -5292px*@sp2 !important;
+        }
+      }
+      //通讯录
+      &.txl{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -1px -7021px*@sp2 !important;
+        }
+      }
+      //养殖档案
+      &.yzda{
+        background-color: rgb(0,157,248);
+        i{
+          background-position: 2px*@sp2 -6122px*@sp2 !important;
+        }
+      }
+      //雇主责任互保
+      &.gzzrhb{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  0px -2589px*@sp2 !important;
+        }
+      }
+      //渔船互保
+      &.yczrhb{
+        background-color: rgb(255,49,150);
+        i{
+          background-position: 2px*@sp2 -3479px*@sp2 !important;
+        }
+      }
+      //基层组织管理
+      &.jczzgl{
+        background-color: rgb(0,148,234);
+        i{
+          background-position:  5px*@sp2 -1716px*@sp2 !important;
+        }
+      }
+      //离线渔船管理
+      &.lxycgl{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  -13px*@sp2 -13px*@sp2 !important;
+        }
+      }
+      //通知公告
+      &.tzgg{
+        background-color: rgb(64,191,73);
+        i{
+          background-position:  2px*@sp2 -6543px*@sp2 !important;
+        }
+      }
+      //港口管理
+      &.gkgl{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -3045px*@sp2 !important;
+        }
+      }
+      //考试管理
+      &.ksgl{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  0px -835px*@sp2 !important;
+        }
+      }
+      //渔船动态编组管理
+      &.ycdtbzgl{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -4388px*@sp2 !important;
+        }
+      }
+      ////////////////案件办理
+      //立案查处（一般案件）
+      &.lacc-ybaj{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  3px*@sp2 -4376px*@sp2 !important;
+        }
+      }
+      //卷宗档案库
+      &.jzdak{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -3983px*@sp2 !important;
+        }
+      }
+      //在办案件
+      &.zbaj{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  2px*@sp2 -693px*@sp2 !important;
+        }
+      }
+      //法律法规
+      &.flfg{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  0px -3610px*@sp2 !important;
+        }
+      }
+      //证据库
+      &.zjk{
+        background-color: rgb(0,157,248);
+        i{
+          background-position:  0px -1413px*@sp2 !important;
+        }
+      }
+      //案件待审批
+      &.ajdsp{
+        background-color: rgb(23,211,209);
+        i{
+          background-position:  2px*@sp2 8px*@sp2 !important;
+        }
+      }
+      //统计分析
+      &.tjfx{
+        background-color: rgb(255,49,150);
+        i{
+          background-position:  0px -325px*@sp2 !important;
+        }
+      }
+      //三无渔船
+      &.swyc{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -1413px*@sp2 !important;
+        }    
+      }      
+      //当场处罚（简易案件）
+      &.dccf-jyaj{
+        background-color: rgb(64,191,73);
+        i{
+          background-position:  8px*@sp2 -2902px*@sp2 !important;
+        }
+      }
+      //自由裁量
+      &.zycj{
+        background-color: rgb(255,180,24);
+        i{
+          background-position:  2px*@sp2 -1797px*@sp2 !important;
+        }
+      }
+      ////////////////渔船安全记分
+      //记分管理
+      &.jfgl {
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  5px*@sp2 -2126px*@sp2 !important;
+        }
+      }
+      //消分申请
+      &.ycjf-xfgl{
+        background-color: rgb(64,191,73);
+        i{
+          background-position: 0px -3317px*@sp2 !important;
+        }
+      }
+      //奖分申请
+      &.ycjf-jfsq{
+        background-color: rgb(236,68,68);
+        i{
+          background-position: 0px -636px*@sp2 !important;
+        }
+      }
+      //记分条例
+      &.ycjf-jftl{
+        background-color: rgb(0,157,248);
+        i{
+          background-position: 4px*@sp2 -1330px*@sp2 !important;
+        }
+      }
+      //个人查询
+      &.grcx{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  0px -2524px*@sp2 !important;
+        }
+      }
+      //安全检查
+      &.aqjc{
+        background-color: rgb(82,75,255);
+        i{
+          background-position:  0px -2922px*@sp2 !important;
+        }
+      }
+      //统计
+      &.ycjf-tj{
+        background-color: rgb(0,148,234);
+        i{
+          background-position: 0px -3999px*@sp2 !important;
+        }
+      }
+      //满分榜单
+      &.ycjf-mfbd{
+        background-color: rgb(255,122,64);
+        i{
+          background-position: 0px -299px*@sp2 !important;
+        }
+      }
+      //安全黑名单
+      &.ycjf-aqhmd{
+        background-color: rgb(11,189,212);
+        i{
+          background-position: 0px 12px*@sp2 !important;
+        }
+      }
+      ////////////////合作社台账
+      //规章制度
+      &.gzzd{
+        background-color: rgb(64, 192, 73);
+        i{
+          background-position:  -1px -1621px*@sp2 !important;
+        }
+      }
+      //值班日志
+      &.zbrz{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  0px -2658px*@sp2 !important;
+        }
+      }
+      //海事渔事
+      &.hshy{
+        background-color: rgb(64, 192, 73);
+        i{
+          background-position:  0px -969px*@sp2 !important;
+        }
+        span{
+          width:200px*@sp2 !important;
+          position: relative;
+          left:15px*@sp2 !important;
+        }
+      }
+      //明火作业
+      &.mhzy{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -1px -313px*@sp2 !important;
+        }
+      }
+      //安全检查
+      &.hzs-aqjc{
+        background-color: rgb(255, 181, 24);
+        i{
+          background-position:  -1px -1971px*@sp2 !important;
+        }
+      }
+      //安全活动
+      &.aqhd{
+        background-color: rgb(24,115,231);
+        i{
+          background-position:  -3px*@sp2 0px*@sp2 !important;
+        }
+      }
+      //移泊报告
+      &.ybbg{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  0px -3030px*@sp2 !important;
+        }
+      }
+      //文件管理
+      &.wjgl{
+        background-color: rgb(255,122,64);
+        i{
+          background-position:  -1px -4113px*@sp2 !important;
+        }
+      }
+      //一船一档
+      &.ycyd{
+        background-color: rgb(11,189,212);
+        i{
+          background-position:  1px -3769px*@sp2 !important;
+        }
+        span{
+          width:200px*@sp2 !important;
+          position: relative;
+          left:15px*@sp2 !important;
+        }
+      }
+      //渔船编组
+      &.ycbz{
+        background-color: rgb(236,68,68);
+        i{
+          background-position:  -1px -4803px*@sp2 !important;
+        }
+      }
+      //定人联船
+      &.drlc{
+        background-color: rgb(167,38,253);
+        i{
+          background-position:  0px -4323px*@sp2 !important;
+        }
+      }
+      //监护人管理
+      &.jhrgl{
+        background-color: rgb(0,148,234);
+        i{
+          background-position:  4px*@sp2 -4574px*@sp2 !important;
+        }
+      }
+      //证书到期
+    &.zsdq{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -3934px*@sp2 !important;
+      }
+    }
+      ////////////////
+      //开机记录
+      &.kjjl{
+        background-color: #09a3e3;
+        i{
+          background-position:  -13px*@sp2 -119px*@sp2 !important;
+        }
+      }
+      //申请消分
+      &.sqxf{
+        //background-color: #f1e016;
+        background-color: #1663f1;
+        i{
+          background-position:  -13px*@sp2 -866px*@sp2 !important;
+        }
+      }
+      //系统分析
+      &.xtfx{
+        background-color: #2a80ef;
+        i{
+          background-position:  -13px*@sp2 -1062px*@sp2 !important;
+        }
+      }    
+      //消分记录
+      &.xfjl{
+        background-color: #339c08;
+        i{
+          background-position:  -13px*@sp2 -1168px*@sp2 !important;
+        }
+      }
+      //记分条例
+      &.jftl{
+        background-color: #d32c2c;
+        margin-left: @blockmargins;
+        i{
+          background-position:  -13px*@sp2 -1281px*@sp2 !important;
+        }
+      }
+      //台州安全检查
+      &.tz-aqjc{
+        background-color: #deb51a;
+        i{
+          background-image: url(../../../images/icon4.png);                
+          background-position: -13px*@sp2 -119px*@sp2 !important;
+        }
+      }
+      &.volkswagen{
+        i{        
+          margin: 16px*@sp2 auto 0px auto !important;
+        }
+      }
+    }
+    em{
+      font-size: 24px*@sp2 !important;
+    }
+    i{
+      display: block;
+      width: 95px*@sp2!important;
+      min-height: 100px*@sp2 !important;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: 95px*@sp2 !important; 
+    }
+  }
+}
+.transition{
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+&.homepageIndex{//&运算符其实就是让当前的选择器和父级选择器按照特定的规则进行连接
+  .item i{
+    background-image: url(../../../images/shoye.png);
+  }
+}
+&.homepageInfoSearch{
+  .item i{
+    background-image: url(../../../images/msgCheck.png);
+  }
+}
+&.homepageCaseDealt{
+  .item i{
+    background-image: url(../../../images/caseHandle.png);
+
+  }
+}
+&.homepageRoutineInspection{
+  .item i{
+    background-image: url(../../../images/cooperationTai2.png);
+
+  }
+}
+&.shipScoreIndex{
+  .item i{
+    background-image: url(../../../images/shipSafeGrade.png);
+  }
+}
+&.shipDayCheck{
+  .item i{
+    background-image: url(../../../images/daycheck.png);
+  }
+}
+&.shipDianYan{
+  .item i{
+    background-image: url(../../../images/shipdy.png);
+  }
+}
+.nav-wrap{
+  display: flex;
+  flex: 1;
+  //首页 横向分布
+  &.homepageIndex{
+    &>div{
+      flex-direction: column;
+      flex: 1;
+      &:not(:last-child){
+        margin-right: @blockmargin;
+      }
+      .item-wrap{
+        &:not(:last-child){
+          margin-bottom: @blockmargin;
+        }        
+      }
+    }
+  }
+  //内页 纵向分布
+  &:not(.homepageIndex){
+    flex-direction: column;
+    .block-wrap{
+      flex: 1;
+      display: flex;
+      margin-bottom: @blockmargin;
+      .item-wrap{
+        flex: 1;
+        &:not(:last-child){
+          margin-right: @blockmargin;
+        }
+        &.mini{
+          flex: 0 0 16%;
+        }
+      }
+    }
+  }
+}
+.chart-wrap{
+  background-image: url('../../../images/zj_management_system_ycdtbg.jpg');
+  background-position:  center;
+  background-repeat:  no-repeat;
+  position: relative;
+  background-size: cover;
+  p{
+    color: #505050;
+    font-size: 24px;
+    margin: 50px 0px 0px 60px;
+  }
+  input[type="button"]{
+    height: 45px;
+    width: 160px;
+    z-index: 8;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    padding-right: 38px;
+    background-image: url(../../../images/zj_management_system_ckhtbtn.png);
+    background-color:  #0184f6;
+    background-repeat:  no-repeat;
+    background-position:  110px center;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    float: right;
+    border: none;
+    .transition;
+    &:hover{
+      right: 30px;
+      background-position:  120px center;
+      .transition;
+    }
+  }
+}
+.block-wrap{//.block-wrap .item-wrap
+  display: flex;
+}
+.item-wrap{
+  flex: 1;
+  display: flex;
+  .item{
+    // background-color: #fff;
+    flex: 1;
+    color: #fff;
+    padding: 18px;
+    overflow: hidden;
+    .transition;
+    em,i{
+      font-style: normal;
+      margin:auto;
+    }
+    i{
+      display: block;
+      width: 95px;
+      min-height: 100px;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: 95px; 
+    }
+    em{
+      font-size: 24px;
+    }
+    
+    &:not(:last-child){
+      margin-right: @blockmargin;
+    }
+    &:hover{
+      opacity: 0.85;
+      filter: alpha(opacity=85);
+      .transition;
+    }
+    &.all-line{
+      position: relative;
+      p{
+        display: flex;
+      }
+      i{
+        margin-right: 15px;
+      }
+      span{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        em{
+          text-align: left;
+          margin: 0; 
+          line-height: 25px;
+        }
+      }
+      input[type="button"]{
+        .transition;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color:transparent;
+        background-image: url(../../../images/zj_management_system_qjtbtn.png);
+        background-size: cover;
+      }
+      &:hover{
+        input[type="button"]{
+          .transition;
+          right: 30px;
+        }
+      }
+    }
+    &:not(.all-line){
+      display: flex;
+      flex-direction: column;
+      i{
+        margin-left: 23px;
+      }
+    }
+    
+    &.img{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &.index{
+        background-image: url(../../../images/zj_management_system_indexiconbg0.png);
+      }
+      &.caseDealt1{
+        background-image: url(../../../images/zj_management_system_ajbliconbg1.png);
+      }
+      &.caseDealt2{
+        background-image: url(../../../images/zj_management_system_ajbliconbg2.png);
+      }
+      &.routineInspection1{
+        background-image: url(../../../images/zj_management_system_rcjciconbg0.png);
+      }
+      &.safetyjfrc{
+        background-image: url(../../../images/safetyjfrc.png);
+      }
+      &.dayChecklx{
+        background-image: url(../../../images/dayChecklx.png);
+      }
+      &.dayCheckcs{
+        background-image: url(../../../images/dayCheckcs.png);
+      }
+      &.dayCheckcc{
+        background-image: url(../../../images/dayCheckcc.png);
+      }
+      &.cooperationlx{
+        background-image: url(../../../images/cooperationlx.png);
+      }
+
+    }
+    ////////////////首页
+    // 天气 -550
+    &.weather{
+      position: relative;
+      background-color: rgb(0,157,248);
+      i{
+        position: absolute;
+        left:98px;
+        top:45px;
+        background-position: 9px -738px;
+        width: 180px;
+        min-height: 150px;
+        background-size: 145px;
+      };
+      b{
+        position: absolute;
+        top:23px;
+        left:20px;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      span.s1{
+        position: absolute;
+        top:66px;
+        left:23px;
+        font-size: 18px;
+      }
+      span.s2{
+        position: absolute;
+        top:99px;
+        left:23px;
+        font-size: 18px;
+      }
+      span.s3{
+        position: absolute;
+        top:129px;
+        left:23px;
+        font-size: 18px;
+      }
+    }
+    // 信息查询 -1274
+    &.xxcx{
+      background-color: rgb(255,122,64);
+      i{
+        background-position: 0px -1103px;
+      }
+    }
+    //案件办理 -20
+    &.ajbl{
+      background-color: rgb(27,193,191);
+      i{
+        background-position:  9px 6px;
+      }
+    }
+    //雷达监控 -3597px
+    &.ldjk{
+      background-color: rgb(82,75,255);
+      i{
+        background-position:  -3px -3209px;
+      }
+    }
+    //合作社台帐 -3163px
+    &.hzstz{
+      background-color: rgb(167,38,253);
+      i{
+        background-position: 0px -2842px;
+      }
+    }
+    //系统设置 -888
+    &.yhgl{
+      background-color: rgb(255,180,24);
+      i{
+        background-position:  -1px -4579px;
+      }
+    }
+    //系统设置 -888
+    &.xtgl{
+      background-color: rgb(255,180,24);
+      i{
+        background-position:  -1px -793px;
+      }
+    }
+    //日常检查 -4448px
+    &.rcjc{
+      background-color: rgb(255,49,150);
+      i{
+        background-position:  2px -3979px;
+      }
+    }
+    //电子证照 -2764px
+    &.dzzz{
+      background-color: rgb(255,122,64);
+      i{
+        background-position:  -1px -2474px;
+      }
+    }
+    //渔船安全记分 -1604
+    &.ycaqjf{
+      background-color: rgb(11,189,212);
+      i{
+        background-position:  -3px -1429px;
+      }
+    }
+    //渔船点验 -1973
+    &.ycdy{
+      background-color: rgb(82,75,255);
+      i{
+        background-position: 0px -1756px;
+      }
+    }
+    //视频监控 -4817px
+    &.spjk{
+      background-color: rgb(64,191,73);
+      i{
+        background-position: 2px -4316px;
+      }
+    }
+    ////////////////日常检查
+    //开捕检查
+    &.kbjc{
+      background-color: rgb(64,191,73);
+      i{
+          background-position:  6px -427px;
+      }
+    }
+    //日常检查
+    &.dailyCheck{
+      background-color: rgb(167,38,253);
+      i{
+        background-position:  6px -427px;
+      }
+    }
+    //出港检查
+    &.cgjc{
+      background-color: rgb(236,68,68);
+      i{
+          background-position:  1px -666px;
+      }
+    }
+    //安全检查
+    &.daycheck-aqjc{
+      background-color: rgb(24,115,231);
+      i{
+          background-position:  8px 1px;
+      }
+    }
+    //四库对比
+    &.skdb{
+      background-color: rgb(82,75,255);
+      i{
+          background-position:  2px -1910px;
+      }
+    }
+    //三库检查
+    &.skjc{
+      background-color: rgb(0,157,248);
+      i{
+          background-position:  -1px -1235px;
+      }
+    }
+    //自愿上缴承诺书
+    &.zysjcns{
+      background-color: rgb(24,115,231);
+      i{
+          background-position:  6px -1580px;
+      }
+    }
+    //违禁渔获检查单
+    &.wjyhjyd{
+      background-color: rgb(11,189,212);
+      i{
+          background-position:  4px -947px;
+      }
+    }
+    //多休减捕
+    &.dxjb{
+      background-color: rgb(255,122,64);
+      i{
+          background-position:  7px -206px;
+      }
+    }
+    ////////////////渔船点验
+    //统计列表
+    &.tjlb{
+      background-color: rgb(236,68,68);
+      i{
+          background-position:  2px -3px;
+      }
+    }
+    //统计历史
+    &.tjls{
+      background-color: rgb(82,75,255);
+      i{
+          background-position:  0px -492px;
+      }
+    }
+    //白名单
+    &.bmd{
+      background-color: rgb(64,191,73);
+      i{
+          background-position:  3px -254px;
+      }
+    }
+    ////////////////信息查询
+    //渔船档案
+    &.ycda{
+      background-color: rgb(36,211,209);
+      i{
+          background-position:  5px -5292px;
+      }
+    }
+    //船员档案
+    &.cyda{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px 6px;
+      }
+    }
+    //船员档案(救助系统)
+    &.cyda_jzxt{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  5px -5292px;
+      }
+    }
+    //通讯录
+    &.txl{
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  -1px -7021px;
+      }
+    }
+    //养殖档案
+    &.yzda{
+      background-color: rgb(0,157,248);
+      i{
+        background-position: 2px -6122px;
+      }
+    }
+    //雇主责任互保
+    &.gzzrhb{
+      background-color: rgb(255,180,24);
+      i{
+        background-position:  0px -2589px;
+      }
+    }
+    //渔船互保
+    &.yczrhb{
+      background-color: rgb(255,49,150);
+      i{
+        background-position: 2px -3479px;
+      }
+    }
+    //基层组织管理
+    &.jczzgl{
+      background-color: rgb(0,148,234);
+      i{
+        background-position:  5px -1716px;
+      }
+    }
+    //离线渔船管理
+    &.lxycgl{
+      background-color: rgb(255,49,150);
+      i{
+        background-position:  -13px -13px;
+      }
+    }
+    //通知公告
+    &.tzgg{
+      background-color: rgb(64,191,73);
+      i{
+        background-position:  2px -6543px;
+      }
+    }
+    //港口管理
+    &.gkgl{
+      background-color: rgb(255,122,64);
+      i{
+        background-position: 0px -3045px;
+      }
+    }
+    //考试管理
+    &.ksgl{
+      background-color: rgb(11,189,212);
+      i{
+        background-position:  0px -835px;
+      }
+    }
+    //渔船动态编组管理
+    &.ycdtbzgl{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -4388px;
+      }
+    }
+    ////////////////案件办理
+    //立案查处（一般案件）
+    &.lacc-ybaj{
+      background-color: rgb(255,122,64);
+      i{
+        background-position:  3px -4376px;
+      }
+    }
+    //卷宗档案库
+    &.jzdak{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -3983px;
+      }
+    }
+    //在办案件
+    &.zbaj{
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  2px -693px;
+      }
+    }
+    //法律法规
+    &.flfg{
+      background-color: rgb(82,75,255);
+      i{
+        background-position:  0px -3610px;
+      }
+    }
+    //证据库
+    &.zjk{
+      background-color: rgb(0,157,248);
+      i{
+        background-position:  0px -1413px;
+      }
+    }
+    //案件待审批
+    &.ajdsp{
+      background-color: rgb(23,211,209);
+      i{
+        background-position:  2px 8px;
+      }
+    }
+    //统计分析
+    &.tjfx{
+      background-color: rgb(255,49,150);
+      i{
+        background-position:  0px -325px;
+      }
+    }
+    //三无渔船
+    &.swyc{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -1413px;
+      }    
+    }
+    //当场处罚（简易案件）
+    &.dccf-jyaj{
+      background-color: rgb(64,191,73);
+      i{
+        background-position:  8px -2902px;
+      }
+    }
+    //自由裁量
+    &.zycj{
+      background-color: rgb(255,180,24);
+      i{
+        background-position:  2px -1797px;
+      }
+    }
+    ////////////////渔船安全记分
+    //记分管理
+    &.jfgl {
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  5px -2126px;
+      }
+    }
+    //消分申请
+    &.ycjf-xfgl{
+      background-color: rgb(64,191,73);
+      i{
+        background-position: 0px -3317px;
+      }
+    }
+    //奖分申请
+    &.ycjf-jfsq{
+      background-color: rgb(236,68,68);
+      i{
+        background-position: 0px -636px;
+      }
+    }
+    //记分条例
+    &.ycjf-jftl{
+      background-color: rgb(0,157,248);
+      i{
+        background-position: 4px -1330px;
+      }
+    }
+    //个人查询
+    &.grcx{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -2524px;
+      }
+    }
+    //安全检查
+    &.aqjc{
+      background-color: rgb(82,75,255);
+      i{
+        background-position:  0px -2922px;
+      }
+    }
+    //统计
+    &.ycjf-tj{
+      background-color: rgb(0,148,234);
+      i{
+        background-position: 0px -3999px;
+      }
+    }
+    //满分榜单
+    &.ycjf-mfbd{
+      background-color: rgb(255,122,64);
+      i{
+        background-position: 0px -299px;
+      }
+    }
+    //安全黑名单
+    &.ycjf-aqhmd{
+      background-color: rgb(11,189,212);
+      i{
+        background-position: 0px 12px;
+      }
+    }
+    ////////////////合作社台账
+    //规章制度
+    &.gzzd{
+      background-color: rgb(64, 192, 73);
+      i{
+        background-position:  -1px -1621px;
+      }
+    }
+    //值班日志
+    &.zbrz{
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  0px -2658px;
+      }
+    }
+    //海事渔事
+    &.hshy{
+      background-color: rgb(64, 192, 73);
+      i{
+        background-position:  0px -969px;
+      }
+      span{
+        width:200px;
+        position: relative;
+        left:15px;
+      }
+    }
+    //明火作业
+    &.mhzy{
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  -1px -313px;
+      }
+    }
+    //安全检查
+    &.hzs-aqjc{
+      background-color: rgb(255, 181, 24);
+      i{
+        background-position:  -1px -1960px;
+      }
+    }
+    //安全活动
+    &.aqhd{
+      background-color: rgb(24,115,231);
+      i{
+        background-position:  -3px 0px;
+      }
+    }
+    //移泊报告
+    &.ybbg{
+      background-color: rgb(11,189,212);
+      i{
+        background-position:  0px -3030px;
+      }
+    }
+    //文件管理
+    &.wjgl{
+      background-color: rgb(255,122,64);
+      i{
+        background-position:  -1px -4113px;
+      }
+    }
+    //一船一档
+    &.ycyd{
+      background-color: rgb(11,189,212);
+      i{
+        background-position:  1px -3769px;
+      }
+      span{
+        width:200px;
+        position: relative;
+        left:15px;
+      }
+    }
+    //渔船编组
+    &.ycbz{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  -1px -4796px;
+      }
+    }
+    //定人联船
+    &.drlc{
+      background-color: rgb(167,38,253);
+      i{
+        background-position:  4px -4323px;
+      }
+    }
+    //监护人管理
+    &.jhrgl{
+      background-color: rgb(0,148,234);
+      i{
+        background-position:  0px -4574px;
+      }
+    }
+    //证书到期
+    &.zsdq{
+      background-color: rgb(236,68,68);
+      i{
+        background-position:  0px -3934px;
+      }
+    }
+    ////////////////
+    //开机记录
+    &.kjjl{
+      background-color: #09a3e3;
+      i{
+        background-position:  -13px -119px;
+      }
+    }
+    //申请消分
+    &.sqxf{
+      //background-color: #f1e016;
+      background-color: #1663f1;
+      i{
+        background-position:  -13px -866px;
+      }
+    }
+    //系统分析
+    &.xtfx{
+      background-color: #2a80ef;
+      i{
+        background-position:  -13px -1062px;
+      }
+    }    
+    //消分记录
+    &.xfjl{
+      background-color: #339c08;
+      i{
+        background-position:  -13px -1168px;
+      }
+    }
+    //记分条例
+    &.jftl{
+      background-color: #d32c2c;
+      margin-left: @blockmargins;
+      i{
+        background-position:  -13px -1281px;
+      }
+    }
+    //台州安全检查
+    &.tz-aqjc{
+      background-color: #deb51a;
+      i{
+        background-image: url(../../../images/icon4.png);                
+        background-position: -13px -119px;
+      }
+    }
+    &.volkswagen{
+      i{        
+        margin: 16px auto 0px auto;
+      }
+    }
+  }  
+}

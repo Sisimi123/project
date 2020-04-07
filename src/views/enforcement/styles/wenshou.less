@@ -1,0 +1,324 @@
+@media (min-width: 809px) and (max-width: 1367px){
+}
+@media (min-width: 1367px) and (max-width: 1920px){
+}
+@media handheld, only screen and (max-width: 1024px){
+}
+@media handheld, only screen and (max-width: 480px){
+}
+.ellipsis{
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.transition{
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .flex-wrap{
+    flex: 1;
+  }
+}
+header{
+  background-color: #2DADFF;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  z-index: 999;
+  em,i{
+    font-style: normal;
+    color: #fff;
+  }
+  .left-name-wrap{
+    flex: 1;
+    em{
+      font-size: 24px;
+    }
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    em{
+      flex: 1;
+      font-size: 20px;
+    }
+    b{
+      width: 35px;
+      height: 35px;
+      background-image: url('../../../images/zj_management_systemlogin_usericon.png');
+      background-position: center;
+      background-repeat:  no-repeat;
+      background-size: cover;
+      margin-right: 10px;
+    }
+  }
+}
+.flex-wrap{
+  flex:1;
+  display: flex;
+  .left-menu{
+    @menuwidth:350px;
+    // background-color: #0e87ce;
+    left:-@menuwidth;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .transition;
+    menu{
+      overflow: hidden;
+      width: 0;
+      flex: 1;
+      box-shadow: 0 0 3px rgba(0,0,0,.2);
+      z-index: 9;
+      transition: all .1s ease;
+      -moz-transition: all .1s ease;
+      -webkit-transition: all .1s ease;
+      animation-delay: 0s;
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      width: @menuwidth;
+      color: #495060;
+      position: relative;
+      em{
+        font-style: normal;
+        font-size: 16px;
+      }
+      &:not(.fn-line){
+        height: 45px;
+      }
+      
+    }
+    nav.nav{
+      padding: 14px 10px 14px 24px;
+      border-right: 2px solid #fff;
+      &:hover{
+        background-color: #f3f3f3;
+        border-right: 2px solid #f3f3f3;
+      }
+      &.active{
+        border-right: 2px solid #2d8cf0;
+      }
+    }
+    input.flex-btn{
+      border-radius: 0 15px 15px 0;
+      margin-top: -25px;
+      margin-right: -20px;
+      top: 50%;
+      right: 0;
+      left: @menuwidth;
+    }
+    &.active{
+      left:0;
+      .transition;
+      animation-delay: .1s;
+      menu{
+        width: @menuwidth;
+        transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+      }
+      .transition;
+      input.flex-btn{
+        background-position:  center bottom;
+      }
+    }
+  }
+  .center-content{
+    flex: 1;
+    background-color: #fff;
+  }
+  .right-menu{
+    @itemwidth:350px;
+    position: relative;
+    display: flex;
+    input.flex-btn{
+      border-radius: 15px 0 0 15px;
+      background-position: center bottom;
+      margin-top: -25px;
+      margin-left: -20px;
+      top: 50%;
+      left: 0;
+    }
+    .nature-wrap{
+      width:0;
+      .transition;
+      background-color: #fff; 
+    }
+    .nature{
+      width: @itemwidth;
+    }
+    &.active{
+      .nature-wrap{
+        width: @itemwidth;
+        .transition;
+      }
+      input.flex-btn{
+        background-position:  center top;
+      }
+    }
+    
+  }
+}
+.nature-wrap{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  .nature{
+    display: flex;
+    flex-direction: column;
+    &-head{
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      background-color: #fff;
+      cursor: pointer;
+      i{
+        margin-right: 5px;
+      }
+      em{
+        flex: 1;
+        font-size: 16px;
+        font-style: normal;
+      }
+    }
+    &.active{
+      flex: 1;
+    }
+    &-body{
+      height: 0;
+      transition: height 0.3s ease;
+      -moz-transition: height 0.3s ease;
+      -webkit-transition: height 0.3s ease;
+      overflow: hidden;
+      flex: 1;
+      .transition;
+    }
+    &.active{
+      overflow: hidden;
+      .nature-head{
+        background-color: #f9f9f9;
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        z-index: 99;
+      }
+      .nature-body{
+        padding: 5px;
+        height: 500px;
+        transition: height 0.3s ease;
+        -moz-transition: height 0.3s ease;
+        -webkit-transition: height 0.3s ease;
+        z-index: 9;
+        background-color: #f9f9f9;
+      }
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #eee;
+    }
+  }
+  
+}
+input.flex-btn{
+  width: 20px;
+  height: 70px;
+  position: absolute;
+  background-image: url('../../../images/flexgray.png');
+  background-repeat:  no-repeat;
+  background-size: 21px; 
+  opacity: .6;
+  z-index: 0;
+  &:hover{
+    opacity: .6;
+    background-image: url('../../../images/flexblue.png');
+  }
+}
+.mini{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  .btn{
+    @size:20px;
+    width: 30px;
+    height: 45px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    opacity: .4;
+    b{
+      width: @size;
+      height: @size;
+      display: flex;
+      background-image: url('../../../images/cz2.png');
+      background-repeat:  no-repeat;
+      background-size: cover;
+    }
+    &:hover{
+      opacity: 1;
+    }
+    &.site b{
+      background-position: 0 0;
+    }
+    &.del b{
+      background-position: 0 -@size;
+    }
+    &.edit b{
+      background-position: 0 -@size*2;
+    }
+  }
+}
+.search-wrap{
+  display: flex;
+  padding: 5px;
+  border-radius: 3px;
+  align-items: center;
+  .ivu-input-wrapper{
+    flex:1;
+    margin-right: 5px;
+  }
+}
+.writ-list{
+  margin: 0 5px 10px;
+  li{
+    display: flex;
+    padding: 5px 0;
+  }
+  .writ-title{
+    flex: 1;
+    .ellipsis;
+    font-size: 14px;
+  }
+}
+.fn-line{
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  button{
+    margin: 5px;
+  }
+  // display: flex;
+  // justify-content: flex-end;
+}

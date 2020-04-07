@@ -1,0 +1,136 @@
+li{
+    list-style-type: none;
+}
+.wrapper1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    &.free1{
+        flex-direction: column;
+    }
+}
+.info-title1{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    i{
+        width: 3px;
+        height: 15px;
+        border-radius: 2px;
+        background-color: #3296FA;
+        margin: 0 10px;
+    }
+}
+.info-wrap1{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    table{
+        flex: 1;
+        border-collapse:collapse;
+        td,th{
+            text-align: center;
+            padding: 10px;
+        }
+        td{
+          &:first-child{
+              font-weight: 700;
+          }  
+        }
+        tr:nth-of-type(odd){
+            background-color: #f8f8f9;
+        }
+    }
+    .info-content1{
+        display: flex;
+        background-color: #f8f8f9;
+        padding: 10px; 
+        flex:1;
+        justify-content: center;
+        &:not(.free){
+            align-items: center;
+        }
+        
+    }
+    ul.info-list1{
+        flex:1;
+        li{
+            display: flex;
+            padding: 5px 0;
+            align-items: center;
+            label{
+                min-width: 120px;
+                text-align: right;
+                margin-right: 10px;
+            }
+            span{
+                flex:1;
+                input{
+                    border: 1px solid #eee;
+                    padding: 5px;
+                }
+                .textarea{
+                    border: 1px solid #eee;
+                    width: 182px;
+                }
+            }
+        }
+        // &.between{
+        //     li{
+        //         justify-content: space-between;
+        //         label{
+        //             min-width: auto;
+        //             text-align: left;
+        //         }
+        //         span{
+        //             text-align: right;
+        //         }
+        //     }
+        // }
+    }
+    .info-free1{
+        display: flex;
+        flex:1;
+        overflow: hidden;
+        clear: both;
+        li{
+            float: left;
+            padding: 10px 20px;
+        }
+    }
+    &.main{
+        display: flex;
+        flex:1;
+        .info-list1{
+            flex:1;
+        }
+    }
+    &:not(.main){
+        flex:1
+    }
+    
+}
+.appoint1{
+    background-color: #f8f8f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+    p{
+        display: flex;
+       
+        &:not(.info-title){
+            margin: 0 20px;
+        }
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    i{
+        font-style: normal;
+    }
+    span{
+        flex:1;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

@@ -1,0 +1,111 @@
+@blockmargin:14px;
+
+.transition{
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+fieldset.title{
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+  legend{
+    margin: 0 10px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+}
+.content-wrap{
+  //一般案件
+  display: flex;
+  flex: 1;
+  
+  &.transactionRegist{
+    
+    .left-menu{
+     /* height: 596px;*/
+      min-width: 160px;
+      background-color: #09409e;
+      nav{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        cursor: pointer;
+        &:hover{
+          color:#4680d1;
+        }
+        &.active{
+          background-color: #0d2f69;
+        }
+      }
+    }
+    .center-content{
+      flex: 1;
+      background-color: #fff;
+      padding: 10px;
+      overflow: auto;
+      height: 560px;
+    }
+    .right-button{
+      padding: 0 18px; 
+      
+      .btn-wrap{
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="button"]{
+        width: 140px;
+        color: #fff;
+        border: none;
+        border-radius: 0 0 10px 0;
+        .transition;
+        cursor: pointer;
+        &.green{
+          background-color: #11d11f;
+          font-size: 14px;
+          height: 50px;
+          &:hover{
+            background-color: #1089de;
+          }
+        }
+        &.orange{
+          background-color: #ec7309;
+          font-size: 14px;
+          height: 38px;
+          &:hover{
+            background-color: #ecbd09;
+          }
+        }
+        &:hover{
+          font-size: 16px;
+          .transition;
+        }
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  //在办案件
+  &.transactionInpro{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    .search-line{
+      padding: 5px;
+      background-color: #f9f9f9; 
+      box-shadow: 0 0 1px #ddd;
+      .ivu-form-item{
+        margin:5px; 
+      }
+    }
+    .table-wrap{
+      padding: 10px;
+      overflow: auto;
+    }
+  }
+}

@@ -1,0 +1,588 @@
+@blockmargin:14px;
+@blockmargins:11px;
+.transition{
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+@media (min-width: 809px) and (max-width: 1367px){
+  .weather{
+    padding: 10px !important; 
+  }
+}
+@media handheld, only screen and (max-width: 1024px){
+  .item-wrap{
+    .item{
+      height: 137px !important;
+      &:not(.all-line){
+        padding:10px !important;
+        em{
+          font-size: 16px !important;
+        }
+      } 
+    }
+  }
+}
+@media handheld, only screen and (max-width: 480px){
+	
+}
+&.homepageIndex{
+  .item i{
+    background-image: url(../../../images/icon1.png);
+
+  }
+}
+&.homepageInfoSearch{
+  .item i{
+    background-image: url(../../../images/icon2.png);
+  }
+}
+&.homepageCaseDealt{
+  .item i{
+    background-image: url(../../../images/icon3.png);
+
+  }
+}
+&.homepageRoutineInspection{
+  .item i{
+    background-image: url(../../../images/icon4.png);
+
+  }
+}
+&.shipScoreIndex{
+  .item i{
+    background-image: url(../../../images/icon5.png);
+  }
+}
+.nav-wrap{
+  display: flex;
+  flex: 1;
+  //首页 横向分布
+  &.homepageIndex{
+    &>div{
+      flex-direction: column;
+      flex: 1;
+      &:not(:last-child){
+        margin-right: @blockmargin;
+      }
+      &:not(:last-child){
+        margin-right: @blockmargin;
+      }
+      .item-wrap{
+        &:not(:last-child){
+          margin-bottom: @blockmargin;
+        }        
+      }
+    }
+  }
+  //内页 纵向分布
+  &:not(.homepageIndex){
+    flex-direction: column;
+    .block-wrap{
+      flex: 1;
+      display: flex;
+      margin-bottom: @blockmargin;
+      .item-wrap{
+        flex: 1;
+        &:not(:last-child){
+          margin-right: @blockmargin;
+        }
+        &.mini{
+          flex: 0 0 16%;
+        }
+      }
+    }
+  }
+}
+.chart-wrap{
+  background-image: url('../../../images/zj_management_system_ycdtbg.jpg');
+  background-position:  center;
+  background-repeat:  no-repeat;
+  position: relative;
+  background-size: cover;
+  p{
+    color: #505050;
+    font-size: 24px;
+    margin: 50px 0px 0px 60px;
+  }
+  input[type="button"]{
+    height: 45px;
+    width: 160px;
+    z-index: 8;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    padding-right: 38px;
+    background-image: url(../../../images/zj_management_system_ckhtbtn.png);
+    background-color:  #0184f6;
+    background-repeat:  no-repeat;
+    background-position:  110px center;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    float: right;
+    border: none;
+    .transition;
+    &:hover{
+      right: 30px;
+      background-position:  120px center;
+      .transition;
+    }
+  }
+}
+.block-wrap{
+  display: flex;
+}
+.item-wrap{
+  flex: 1;
+  display: flex;
+  .item{
+    // background-color: #fff;
+    flex: 1;
+    color: #fff;
+    padding: 18px;
+    overflow: hidden;
+    .transition;
+    em,i{
+      font-style: normal;
+      margin:auto;
+    }
+    i{
+      display: block;
+      width: 80px;
+      min-height: 80px;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: 106px; 
+    }
+    em{
+      font-size: 24px;
+    }
+    
+    &:not(:last-child){
+      margin-right: @blockmargin;
+    }
+    &:hover{
+      opacity: 0.85;
+      filter: alpha(opacity=85);
+      .transition;
+    }
+    &.all-line{
+      position: relative;
+      p{
+        display: flex;
+      }
+      i{
+        margin-right: 15px;
+      }
+      span{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        em{
+          text-align: left;
+          margin: 0; 
+          line-height: 25px;
+        }
+      }
+      input[type="button"]{
+        .transition;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color:transparent;
+        background-image: url(../../../images/zj_management_system_qjtbtn.png);
+        background-size: cover;
+      }
+      &:hover{
+        input[type="button"]{
+          .transition;
+          right: 30px;
+        }
+      }
+    }
+    &:not(.all-line){
+      display: flex;
+      flex-direction: column;
+      i{
+        margin-left: 23px;
+      }
+    }
+    
+    &.img{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &.index{
+        background-image: url(../../../images/zj_management_system_indexiconbg0.png);
+      }
+      &.caseDealt1{
+        background-image: url(../../../images/zj_management_system_ajbliconbg1.png);
+      }
+      &.caseDealt2{
+        background-image: url(../../../images/zj_management_system_ajbliconbg2.png);
+      }
+      &.routineInspection1{
+        background-image: url(../../../images/zj_management_system_rcjciconbg0.png);
+      }
+    }
+    // 天气
+    &.weather{
+      background-color: #8bbf1d;
+      b{
+        font-size: 28px;
+        font-weight: 400;
+      }
+      span{
+        font-size: 18px;
+      }
+    }
+    // 信息查询
+    &.xxcx{
+      background-color: #a316a2;
+      i{
+        background-position: -13px -13px;
+      }
+    }
+    //案件办理
+    &.ajbl{
+      background-color: #2a80ef;
+      i{
+        background-position:  -13px -119px;
+      }
+    }
+    //雷达监控
+    &.ldjk{
+      background-color: #09a3e3;
+      i{
+        background-position:  -13px -225px;
+      }
+    }
+    //系统管理
+    &.xtgl{
+      background-color: #11178f;
+      i{
+        background-position:  -13px -330px;
+      }
+    }
+    //日常检查
+    &.rcjc{
+      background-color: #ff3196;
+      i{
+        background-position:  -13px -438px;
+      }
+    }
+    //电子证照
+    &.dzzz{
+      background-color: #0960e3;
+      i{
+        background-position:  -13px -544px;
+      }
+    }
+    //视频监控
+    &.spjk{
+      background-color: #00aaa9;
+      i{
+        background-position: -13px -650px;
+      }
+    }
+    //通讯录
+    &.txl{
+      background-color: #ff3196;
+      i{
+        background-position:  -13px -435px;
+      }
+    }
+    //渔船档案
+    &.ycda{
+      background-color: #16a320;
+      i{
+        background-position:  -13px -13px;
+      }
+    }
+    //船员档案
+    &.cyda{
+      background-color: #00aaa9;
+      i{
+        background-position:  -13px -332px;
+      }
+    }
+    //养殖档案
+    &.yzda{
+      background-color: #2a80ef;
+      i{
+        background-position: -13px -649px;
+      }
+    }
+    //雇主责任互保
+    &.gzzrhb{
+      background-color: #d32c2c;
+      i{
+        background-position: -13px -543px;
+      }
+    }
+    //雇主责任互保
+    &.yczrhb{
+      background-color: #2a80ef;
+      i{
+        background-position: -13px -543px;
+      }
+    }
+    //合作社台帐
+    &.hzstz{
+      background-color: #8bbf1d;
+      i{
+        background-position: -13px -110px;
+        background-size: 100px;
+      }
+    }
+    //自由裁剪
+    &.zycj{
+      background-color: #16a320;
+      i{
+        background-position:  -13px -13px;
+      }
+    }
+    //卷宗档案库
+    &.jzdak{
+      background-color: #8bbf1d;
+      i{
+        background-position:  -13px -119px;
+      }
+    }
+    //在办案件
+    &.zbaj{
+      background-color: #2a80ef;
+      i{
+        background-position:  -13px -225px;
+      }
+    }
+    //法律法规
+    &.flfg{
+      background-color: #d32c2c;
+      i{
+        background-position:  -13px -330px;
+      }
+    }
+    //案件待审批
+    &.ajdsp{
+      background-color: #09a3e3;
+      i{
+        background-position:  -13px -438px;
+      }
+    }
+    //统计分析
+    &.tjfx{
+      background-color: #ff3196;
+      i{
+        background-position:  -13px -546px;
+      }
+    }
+    //当场处罚（简易案件）
+    &.dccf-jyaj{
+      background-color: #a316a2;
+      i{
+        background-position:  -13px -650px;
+      }
+    }
+    //立案查处（一般案件）
+    &.lacc-ybaj{
+      background-color: #deb51a;
+      i{
+        background-position:  -13px -225px;
+      }
+    }
+    //开捕检查
+    &.kbjc{
+      background-color: #8f1d99;
+      i{
+        background-position:  -13px -13px;
+      }
+    }
+    //三库核查
+    &.skhc{
+      background-color: #c53232;
+      i{
+        background-position:  -13px -13px;
+      }
+    }
+    //安全检查
+    &.aqjc{
+      background-color: #8bbf1d;
+      i{
+        background-position:  -13px -119px;
+      }
+    }
+    //开机记录
+    &.kjjl{
+      background-color: #09a3e3;
+      i{
+        background-position:  -13px -119px;
+      }
+    }
+    //自愿上缴承诺书
+    &.zysjcns{
+      //background-color: #f1e016;
+      background-color: #1663f1;
+      i{
+        background-position:  -13px -224px;
+      }
+    }
+    //违禁渔获物接收单
+    &.wjyhwjsd{
+      background-color: #2a80ef;
+      i{
+        background-position:  -13px -330px;
+      }
+    }
+    //多休减捕
+    &.dxjb{
+      background-color: #09a3e3;
+      i{
+        background-position:  -13px -436px;
+      }
+    }
+    //申请消分
+    &.sqxf{
+      //background-color: #f1e016;
+      background-color: #1663f1;
+      i{
+        background-position:  -13px -866px;
+      }
+    }
+    //渔船安全记分
+    &.ycaqjf{
+      background-color: #deb51a;
+      i{
+        background-position:  -13px -546px;
+      }
+    }
+    // .jfgl {
+    //   background-color: #deb51a;
+    //   margin-left: @blockmargins;
+    //   i{
+    //     background-position:  -13px -965px;
+    //   }
+    // }
+    //记分管理
+    &.jfgl {
+      background-color: #deb51a;
+      i{
+        background-position:  -13px -965px;
+      }
+    }
+    //记分管理(渔船记分)
+    &.ycjf-jfgl {
+      background-color: #deb51a;
+      i{
+        background-position: -13px -755px;
+      }
+    }
+    //记分条例(渔船记分)
+    &.ycjf-jftl{
+      background-color: #deb51a;
+      i{
+        background-position: -13px -861px;
+      }
+    }
+    //消分申请(渔船记分)
+    &.ycjf-xfgl{
+      background-color: #2a80ef;
+      i{
+        background-position: -16px -973px;
+      }
+    }
+    //奖分申请（渔船记分）
+    &.ycjf-jfsq{
+      background-color: #339c08;
+      i{
+        background-position: -16px -973px;
+      }
+    }
+    //统计（渔船记分）
+    &.ycjf-tj{
+      background-color: #ff3196;
+      i{
+        background-position: -19px -647px;
+      }
+    }
+    //满分榜单（渔船记分）
+    &.ycjf-mfbd{
+      background-color: #1663f1;
+      i{
+        background-position: -13px -437px;
+      }
+    }
+    //安全黑名单（渔船记分）
+    &.ycjf-aqhmd{
+      background-color: #8bbf1d;
+      i{
+        background-position: -13px -543px;
+      }
+    }
+    //系统分析
+    &.xtfx{
+      background-color: #2a80ef;
+      i{
+        background-position:  -13px -1062px;
+      }
+    }    
+    //消分记录
+    &.xfjl{
+      background-color: #339c08;
+      i{
+        background-position:  -13px -1168px;
+      }
+    }
+    //记分条例
+    &.jftl{
+      background-color: #d32c2c;
+      margin-left: @blockmargins;
+      i{
+        background-position:  -13px -1281px;
+      }
+    }
+    //个人查询
+    &.grcx{
+      background-color: #8bbf1d;
+      i{
+        background-position:  -13px -1359px;
+      }
+    }
+    //台州安全检查
+    &.tz-aqjc{
+      background-color: #deb51a;
+      i{
+        background-image: url(../../../images/icon4.png);                
+        background-position: -13px -119px;
+      }
+    }
+    &.volkswagen{
+      i{        
+        margin: 16px auto 0px auto;
+      }
+    }
+    //渔船记分
+    //个人查询
+    &.grcx{
+      background-color: #8bbf1d;
+      i{
+        background-position:  -13px -1359px;
+      }
+    }
+    &.volkswagen{
+      i{        
+        margin: 16px auto 0px auto;
+      }
+    }
+  }  
+}
